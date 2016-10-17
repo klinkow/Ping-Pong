@@ -1,33 +1,29 @@
-var inputtedNumber = $("#numberInput").val;
-
-
-
 $(document).ready(function() {
-  $("#btn").click(function(event) {
+  $(".btn").click(function(event) {
     event.preventDefault();
+    $("#display").children("li").remove();
+    var inputtedNumber = $("#numberInput").val();
+    var inputtedNumber = parseInt(inputtedNumber);
     var number = inputtedNumber;
     var listOfNumbers = [inputtedNumber];
 
-    console.log(1)
-
     for(var i=1; i < inputtedNumber; i+=1) {
-      number -= 1;
-      listOfNumbers.add(number);
+      number-=1;
+      listOfNumbers.push(number);
     };
 
-    listOfNumbers.foreach(function(listOfNumber) {
-      if ((listOfNumber%3==0) && (listOfNumber%5!=0)) {
-        listOfNumber="ping";
-      } else if (listOfNumber%5==0 && listOfNumber%3!=0) {
-        listOfNumber="pong";
-      } else if (listOfNumber%15==0) {
-        listOfNumber="pingpong";
+    for(var z=1; z<=inputtedNumber; z+=1) {
+      if ((z%3===0) && (z%5!=0)) {
+        $("#display").append("<li>ping</li>");
+      } else if ((z%5===0) && (z%3!=0)) {
+        $("#display").append("<li>pong</li>");
+      } else if (z%15===0) {
+        $("#display").append("<li>pingpong</li>");
+      } else {
+        $("#display").append("<li>"+ z +"</li>");
       }
-    });
+    };
 
-    listOfNumbers.foreach(function(listOfNumber) {
-      $("#display").append("<li>" + listOfNumber + "</li>");
-    });
   });
 
 
