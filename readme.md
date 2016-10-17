@@ -6,12 +6,13 @@
 
 ## Description
 
-_This website will count to a number inputted by the user.  The website will call some numbers ping, some pong, and some pingpong.  There is a pattern used to determine which name these numbers get._
+_This website will count to a number inputted by the user.  The website will call numbers divisible by 3 "ping", it will call numbers divisible by 5 "pong", and numbers divisible by both "pingpong."_
 
 ## Setup/Installation Requirements
 
 * _This website should run in most browsers._
-**_klinkow.github.io/Ping-Pong_**
+
+* **_klinkow.github.io/Ping-Pong_**
 
 ## Known Bugs
 
@@ -33,17 +34,26 @@ Copyright (c) 2017 **_Bill Klinkow_**
 
 ## Specifications
 
+__It can count to a specified number__
+
 _Example Input: 2_
+
 _Example Output: [1,2]_
 
-_It can replace numbers divisible by 3 with "ping"_
+__It can replace numbers divisible by 3 with "ping"__
+
 _Example Input: 6_
+
 _Example Output: [1,2,ping, 4, 5, ping]_
 
-_It can replace numbers divisible by 5 with "pong"_
+__It can replace numbers divisible by 5 with "pong"__
+
 _Example Input: 10_
+
 _Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong]_
 
-_It can replace numbers divisible by 15 with "pingpong"_
+__It can replace numbers divisible by 15 with "pingpong"__
+
 _Example input:15_
+
 _Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong]_
