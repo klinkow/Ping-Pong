@@ -12,7 +12,7 @@ _This website will count to a number inputted by the user.  The website will cal
 
 * _This website should run in most browsers._
 
-* **_klinkow.github.io/Ping-Pong_**
+* [klinkow.github.io/Ping-Pong](klinkow.github.io/Ping-Pong)
 
 ## Known Bugs
 
