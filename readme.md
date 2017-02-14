@@ -6,7 +6,7 @@
 
 ## Description
 
-_This website will count to a number inputted by the user.  The website will call numbers divisible by 3 "ping", it will call numbers divisible by 5 "pong", and numbers divisible by both "pingpong."_
+_This website will count to a number inputted by the user.  The website will call numbers divisible by 3 "ping", it will call numbers divisible by 5 "pong", and numbers divisible by both  "pingpong."_
 
 ## Setup/Installation Requirements
 
